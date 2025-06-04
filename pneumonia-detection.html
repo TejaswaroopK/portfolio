@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia Detection Project | Tejaswaroop Karanam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TEJASWAROOP KARANAM</h1>
+            <p>AI/ML Engineer | Data Scientist | Full Stack Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h1>Pneumonia Detection and Classification</h1>
+                <p class="project-date">December 2023 - April 2024</p>
+                <div class="project-tags">
+                    <span>Deep Learning</span>
+                    <span>Computer Vision</span>
+                    <span>TensorFlow</span>
+                    <span>Healthcare</span>
+                </div>
+            </div>
+
+            <div class="project-hero">
+                <img src="images/Dataset.jpg" alt="Pneumonia Detection System">
+            </div>
+
+            <div class="project-content">
+                <section class="project-overview">
+                    <h2>Project Overview</h2>
+                    <p>Developed a Convolutional Neural Network (CNN) model to detect and classify pneumonia from chest X-ray images with 98% accuracy. The system helps radiologists identify pneumonia cases more efficiently, potentially saving lives through earlier detection.</p>
+                    
+                    <div class="project-highlights">
+                        <div class="highlight-card">
+                            <h3>98% Accuracy</h3>
+                            <p>Achieved on test dataset</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>5000+ Images</h3>
+                            <p>High-volume chest X-ray dataset</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>CNN Architecture</h3>
+                            <p>Custom model design</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-details">
+                    <h2>Technical Details</h2>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <h3>Problem Statement</h3>
+                            <p>Pneumonia causes millions of deaths annually worldwide. Early detection is crucial but challenging due to the need for expert radiologists. This project aims to automate detection to improve diagnosis speed and accuracy.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Dataset</h3>
+                            <p>Used the Chest X-Ray Images (Pneumonia) dataset from Kaggle containing 5,863 validated images categorized into Normal, Bacterial Pneumonia, and Viral Pneumonia.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Model Architecture</h3>
+                            <p>Custom CNN with 5 convolutional layers, batch normalization, max pooling, and dropout layers to prevent overfitting. Final dense layers with softmax activation for classification.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Technologies Used</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>TensorFlow/Keras</li>
+                                <li>OpenCV for image preprocessing</li>
+                                <li>Matplotlib/Seaborn for visualization</li>
+                                <li>Flask for deployment prototype</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-results">
+                    <h2>Results & Impact</h2>
+                    <div class="results-content">
+                        <div class="result-image">
+                            <img src="images/Cnn1.png" alt="Model Architecture">
+                            <p>CNN model architecture diagram</p>
+                        </div>
+                        <div class="result-text">
+                            <h3>Performance Metrics</h3>
+                            <ul>
+                                <li>Accuracy: 98%</li>
+                                <li>Precision: 97%</li>
+                                <li>Recall: 98%</li>
+                                <li>F1-Score: 97.5%</li>
+                            </ul>
+                            <h3>Key Achievements</h3>
+                            <ul>
+                                <li>Reduced false negatives by 85% compared to baseline models</li>
+                                <li>Implemented effective data augmentation to handle class imbalance</li>
+                                <li>Developed Grad-CAM visualization to explain model decisions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-challenges">
+                    <h2>Challenges & Solutions</h2>
+                    <div class="challenge">
+                        <h3>Class Imbalance</h3>
+                        <p>The dataset had significantly more pneumonia cases than normal cases, which could bias the model.</p>
+                        <p><strong>Solution:</strong> Implemented weighted class loss and strategic data augmentation including rotations, flips, and brightness adjustments.</p>
+                    </div>
+                    <div class="challenge">
+                        <h3>Overfitting</h3>
+                        <p>Initial models showed excellent training accuracy but poor validation performance.</p>
+                        <p><strong>Solution:</strong> Added dropout layers, batch normalization, and implemented early stopping with model checkpointing.</p>
+                    </div>
+                </section>
+
+                <div class="project-actions">
+                    <a href="index.html#projects" class="btn-back">← Back to Projects</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tejaswaroop Karanam. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

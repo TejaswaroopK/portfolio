@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Detection | Tejaswaroop Karanam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TEJASWAROOP KARANAM</h1>
+            <p>AI/ML Engineer | Data Scientist | Full Stack Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h1>Brain Tumor Detection using CNN</h1>
+                <p class="project-date">June 2023 - November 2023</p>
+                <div class="project-tags">
+                    <span>Deep Learning</span>
+                    <span>Medical Imaging</span>
+                    <span>TensorFlow</span>
+                    <span>Computer Vision</span>
+                </div>
+            </div>
+
+            <div class="project-hero">
+                <img src="images/brain1.jpg" alt="Brain Tumor Detection System">
+            </div>
+
+            <div class="project-content">
+                <section class="project-overview">
+                    <h2>Project Overview</h2>
+                    <p>Developed a Convolutional Neural Network (CNN) model to detect brain tumors from MRI scans with 91% accuracy. The system classifies MRI images into four categories: no tumor, pituitary tumor, meningioma tumor, and glioma tumor.</p>
+                    
+                    <div class="project-highlights">
+                        <div class="highlight-card">
+                            <h3>91% Accuracy</h3>
+                            <p>Across all tumor classes</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>4 Classes</h3>
+                            <p>Precise tumor classification</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>3000+ Scans</h3>
+                            <p>Curated MRI dataset</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-details">
+                    <h2>Technical Implementation</h2>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <h3>Dataset</h3>
+                            <p>Used the Brain Tumor MRI Dataset from Kaggle containing 3,000+ T1-weighted contrast-enhanced MRI scans across four categories. Implemented extensive data augmentation to handle class imbalance.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Model Architecture</h3>
+                            <p>Custom CNN with 4 convolutional blocks (Conv2D + BatchNorm + ReLU + MaxPooling) followed by 3 dense layers. Used dropout (0.5) and L2 regularization to prevent overfitting.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Technologies</h3>
+                            <ul>
+                                <li>Python 3.8</li>
+                                <li>TensorFlow 2.6</li>
+                                <li>OpenCV for preprocessing</li>
+                                <li>Matplotlib/Seaborn</li>
+                                <li>Flask for demo deployment</li>
+                            </ul>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Preprocessing</h3>
+                            <p>Applied skull stripping using BET, intensity normalization (N4 bias correction), and resizing to 224×224 pixels. Augmentations included rotation (±15°), zoom (0.9-1.1), and horizontal flips.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-results">
+                    <h2>Results & Performance</h2>
+                    <div class="results-content">
+                        <div class="result-image">
+                            <img src="images/Cnn1.png" alt="Model Architecture">
+                            <p>Custom CNN architecture with layer dimensions</p>
+                        </div>
+                        <div class="result-text">
+                            <h3>Evaluation Metrics</h3>
+                            <ul>
+                                <li>Overall Accuracy: 91.2%</li>
+                                <li>Precision: 89-93% across classes</li>
+                                <li>Recall: 88-92% across classes</li>
+                                <li>F1-Score: 90.1% weighted average</li>
+                            </ul>
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Grad-CAM visualization for model interpretability</li>
+                                <li>DICOM image support for clinical compatibility</li>
+                                <li>Optimized for low false negatives (sensitivity: 92%)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-challenges">
+                    <h2>Challenges & Solutions</h2>
+                    <div class="challenge">
+                        <h3>Class Imbalance</h3>
+                        <p>Glioma tumors were underrepresented (15% of dataset) compared to other classes.</p>
+                        <p><strong>Solution:</strong> Implemented class-weighted loss function and targeted oversampling of minority classes during augmentation.</p>
+                    </div>
+                    <div class="challenge">
+                        <h3>Artifact Noise</h3>
+                        <p>Some scans contained motion artifacts and scanner noise.</p>
+                        <p><strong>Solution:</strong> Developed custom preprocessing pipeline with N4 bias correction and non-local means denoising.</p>
+                    </div>
+                </section>
+
+                <div class="project-actions">
+                    <a href="index.html#projects" class="btn-back">← Back to Projects</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tejaswaroop Karanam. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
