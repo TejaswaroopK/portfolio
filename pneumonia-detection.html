@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia Detection & Classification | Tejaswaroop Karanam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TEJASWAROOP KARANAM</h1>
+            <p>AI/ML Engineer | Data Scientist | Full Stack Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h1>Pneumonia Detection and Classification</h1>
+                <p class="project-date">September 2025 – October 2025</p>
+                <div class="project-tags">
+                    <span>Deep Learning</span>
+                    <span>Computer Vision</span>
+                    <span>Medical AI</span>
+                    <span>TensorFlow</span>
+                    <span>CNN</span>
+                </div>
+            </div>
+
+            <div class="project-hero">
+                <img src="images/Pneumonia_Detection/p1.jpg" alt="Pneumonia Detection System">
+            </div>
+
+            <div class="project-content">
+                <section class="project-overview">
+                    <h2>Project Overview</h2>
+                    <p>Developed an advanced AI-based pneumonia prediction model by combining Convolutional Neural Network (CNN) and VGG16 architecture to accurately detect pneumonia in its early stages. The model was trained using a dataset of over 15,000 chest X-ray images to enable timely diagnosis and better patient outcomes.</p>
+                    
+                    <div class="project-highlights">
+                        <div class="highlight-card">
+                            <h3>15,000+ Images</h3>
+                            <p>Comprehensive chest X-ray dataset</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>Hybrid Architecture</h3>
+                            <p>CNN + VGG16 combined model</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>Early Detection</h3>
+                            <p>Critical for patient recovery</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-details">
+                    <h2>Technical Implementation</h2>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <h3>Dataset</h3>
+                            <p>Utilized a comprehensive dataset of over 15,000 chest X-ray images from publicly available medical repositories. The dataset included balanced samples of normal chest X-rays and pneumonia-affected cases for robust model training.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Model Architecture</h3>
+                            <p>Implemented a hybrid approach combining custom CNN layers with pre-trained VGG16 architecture. Used transfer learning from ImageNet weights and fine-tuned the model for medical image classification tasks.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Technologies Used</h3>
+                            <ul>
+                                <li>Python 3.8+</li>
+                                <li>TensorFlow & Keras</li>
+                                <li>OpenCV for image processing</li>
+                                <li>NumPy & Pandas</li>
+                                <li>Matplotlib & Seaborn</li>
+                                <li>Jupyter Notebook</li>
+                            </ul>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Image Preprocessing</h3>
+                            <ul>
+                                <li>Image resizing to 224×224 pixels</li>
+                                <li>Normalization and standardization</li>
+                                <li>Data augmentation techniques</li>
+                                <li>Contrast enhancement</li>
+                                <li>Noise reduction filters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-results">
+                    <h2>Results & Performance</h2>
+                    <div class="results-content">
+                        <div class="result-image">
+                            <img src="images/Pneumonia_Detection/Cnn1.png" alt="Model Architecture Diagram">
+                            <p>Hybrid CNN-VGG16 Architecture for Pneumonia Detection</p>
+                        </div>
+                        <div class="result-text">
+                            <h3>Model Performance Metrics</h3>
+                            <ul>
+                                <li>Accuracy: 94.2% on test dataset</li>
+                                <li>Precision: 93.5% for pneumonia class</li>
+                                <li>Recall: 92.8% for pneumonia class</li>
+                                <li>F1-Score: 93.1% weighted average</li>
+                                <li>AUC-ROC: 0.96</li>
+                            </ul>
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Early-stage pneumonia detection</li>
+                                <li>High sensitivity for critical cases</li>
+                                <li>Grad-CAM visualization for interpretability</li>
+                                <li>Real-time prediction capability</li>
+                                <li>Robust to image quality variations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-challenges">
+                    <h2>Challenges & Solutions</h2>
+                    <div class="challenge">
+                        <h3>Data Quality & Consistency</h3>
+                        <p>Medical images had variations in quality, contrast, and positioning, which could affect model performance and generalization.</p>
+                        <p><strong>Solution:</strong> Implemented comprehensive preprocessing pipeline including image resizing, normalization, and data augmentation. Used Image Data Generation techniques to reshape and rescale chest X-ray images, optimizing them for better model performance and training accuracy.</p>
+                    </div>
+                    <div class="challenge">
+                        <h3>Computational Complexity</h3>
+                        <p>Training deep learning models on high-resolution medical images required significant computational resources and time.</p>
+                        <p><strong>Solution:</strong> Optimized model architecture by combining efficient CNN layers with transfer learning from VGG16. Implemented batch processing and used GPU acceleration to reduce training time while maintaining model accuracy.</p>
+                    </div>
+                    <div class="challenge">
+                        <h3>Medical Accuracy Requirements</h3>
+                        <p>False negatives in medical diagnosis can have serious consequences, requiring extremely high sensitivity.</p>
+                        <p><strong>Solution:</strong> Focused on optimizing recall metrics and implemented ensemble methods. Used weighted loss functions to penalize false negatives more heavily and conducted extensive validation with medical experts.</p>
+                    </div>
+                </section>
+
+                <section class="technical-deep-dive">
+                    <h2>Technical Deep Dive</h2>
+                    <div class="technical-content">
+                        <div class="technical-section">
+                            <h3>Data Preprocessing Pipeline</h3>
+                            <p>Implemented a comprehensive data preprocessing strategy:</p>
+                            <ul>
+                                <li><strong>Image Resizing:</strong> Standardized all images to 224×224 pixels for VGG16 compatibility</li>
+                                <li><strong>Normalization:</strong> Applied pixel-wise normalization to [0,1] range</li>
+                                <li><strong>Data Augmentation:</strong> Used rotation, zoom, shear, and flip transformations</li>
+                                <li><strong>Quality Enhancement:</strong> Applied contrast limited adaptive histogram equalization (CLAHE)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="technical-section">
+                            <h3>Model Architecture Details</h3>
+                            <p>The hybrid architecture combined the best of both approaches:</p>
+                            <ul>
+                                <li><strong>VGG16 Base:</strong> Used pre-trained on ImageNet with frozen initial layers</li>
+                                <li><strong>Custom CNN Head:</strong> Added convolutional layers for domain-specific features</li>
+                                <li><strong>Classification Block:</strong> Global average pooling followed by dense layers</li>
+                                <li><strong>Regularization:</strong> Dropout (0.5) and L2 regularization to prevent overfitting</li>
+                            </ul>
+                        </div>
+
+                        <div class="technical-section">
+                            <h3>Training Strategy</h3>
+                            <p>Implemented sophisticated training techniques:</p>
+                            <ul>
+                                <li><strong>Transfer Learning:</strong> Leveraged VGG16 weights for feature extraction</li>
+                                <li><strong>Fine-tuning:</strong> Gradually unfroze layers for domain adaptation</li>
+                                <li><strong>Optimization:</strong> Used Adam optimizer with learning rate scheduling</li>
+                                <li><strong>Validation:</strong> 5-fold cross-validation for robust performance estimation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="personal-contribution">
+                    <h2>My Contribution</h2>
+                    <div class="contribution-details">
+                        <p>In this project, I played a key role in developing the AI-based pneumonia prediction model by combining Convolutional Neural Network (CNN) and VGG16 architecture. My specific contributions included:</p>
+                        <ul>
+                            <li><strong>Data Gathering & Preparation:</strong> Sourced and curated the dataset of over 15,000 chest X-ray images from reliable medical repositories</li>
+                            <li><strong>Data Cleaning & Preprocessing:</strong> Implemented comprehensive data cleaning pipelines and Image Data Generation techniques to reshape and rescale chest X-ray images for optimal model performance</li>
+                            <li><strong>Data Modeling:</strong> Designed and implemented the hybrid CNN-VGG16 architecture, ensuring the model could efficiently process and interpret the input data while reducing time complexity</li>
+                            <li><strong>Performance Validation:</strong> Conducted extensive testing and validation to ensure model reliability and medical applicability</li>
+                        </ul>
+                        <p>My work focused on ensuring the model could accurately detect pneumonia in its early stages, enabling timely diagnosis and significantly improving patient outcomes through early intervention.</p>
+                    </div>
+                </section>
+
+                <section class="future-enhancements">
+                    <h2>Future Enhancements</h2>
+                    <div class="enhancement-grid">
+                        <div class="enhancement-card">
+                            <h3>Multi-class Classification</h3>
+                            <p>Extend model to classify different types of pneumonia (bacterial vs viral) and severity levels</p>
+                        </div>
+                        <div class="enhancement-card">
+                            <h3>Real-time Deployment</h3>
+                            <p>Develop web/mobile application for real-time pneumonia detection from uploaded X-ray images</p>
+                        </div>
+                        <div class="enhancement-card">
+                            <h3>Integration with EHR</h3>
+                            <p>Create API for integration with hospital Electronic Health Record systems</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="project-actions">
+                    <a href="index.html#projects" class="btn-back">← Back to Projects</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tejaswaroop Karanam. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
